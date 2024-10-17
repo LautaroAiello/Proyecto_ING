@@ -18,6 +18,9 @@ public class ProfesorModel extends UsuarioModel{
     @Column(nullable = false)
     private int valoracion;
 
+    @Column()
+    private int disponibilidad;
+
     @OneToMany(mappedBy = "profesor") // un profesor puede tener muchas clases (lista de clases)
     private List<ClaseModel> clases;
 
@@ -32,5 +35,11 @@ public class ProfesorModel extends UsuarioModel{
     }
     public void setValoracion(int v){
         this.valoracion = v;
+    }
+    public int getDisponibilidad(){
+        return this.disponibilidad;
+    }
+    public void setDisponibilidad(int disponibilidad){
+        this.disponibilidad = disponibilidad;
     }
 }

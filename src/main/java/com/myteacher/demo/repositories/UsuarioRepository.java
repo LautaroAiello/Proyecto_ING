@@ -11,6 +11,9 @@ import com.myteacher.demo.models.UsuarioModel;
 @Repository
 public interface UsuarioRepository extends JpaRepository<UsuarioModel, Long> {
     Optional<UsuarioModel> findByEmail(String email); //metodo personalizado que busca usuario por su email. Puede ser un valor o null.
+    Optional<UsuarioModel> findByNombre(String nombre);
+    Optional<UsuarioModel> findByApellido(String apellido);
+    Optional<UsuarioModel> findByCiudad(String ciudad);
 }
 
 

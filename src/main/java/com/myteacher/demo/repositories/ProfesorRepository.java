@@ -10,6 +10,7 @@ import com.myteacher.demo.models.ProfesorModel;
 @Repository
 public interface ProfesorRepository extends JpaRepository<ProfesorModel, Long>{
     List<ProfesorModel> findByMateria(String materia);
-    List<ProfesorModel> findByOrderByValoracionDesc(); // Desarrollar
-
+    List<ProfesorModel> findByOrderByValoracionDesc(int valoracion); // Desarrollar
+    List<ProfesorModel> findByDisponibilidad(int disponibilidad);
+    List<ProfesorModel> findByCiudad(String ciudad);
 }
