@@ -13,12 +13,13 @@
     font-weight: 600;
     font-style: normal;
     margin-top: 15%;
+    margin-left: 5%;
 }
 .inputs_login{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 14%;
+    margin-top: 30%;
 }
 .inputs_login input{
     margin: 4%;
