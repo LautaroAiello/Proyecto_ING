@@ -13,7 +13,7 @@
 <body>
     <h1 class="login_h1">Crea tu perfil de Profesor</h1>
     <div class="inputs_login">
-        <form action="">
+        <form action="" id="form-register">
             <label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
             </label>
@@ -43,9 +43,11 @@
                 <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
             </label>
             <br>
-            <label>
-                <input type="text" name="materias" id="materias" placeholder="Materias a enseñar">
+            <label id="registro_de_materias">
+                <p id="textos_forms">Ingrese una materia por campo</p>
+                <input type="text" name="materias[]" id="materias" placeholder="Materia a enseñar">
             </label>
+            <button id="agregar_materia">+</button>
             <br>
             <label>
                 <input type="text" name="disponibilidad" id="disponibilidad" placeholder="Disponibilidad">
@@ -67,5 +69,6 @@
             
         </form>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>

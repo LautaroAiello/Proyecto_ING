@@ -25,7 +25,7 @@ public class UsuarioModel {
     private String nombre;
 
     @Column(nullable = false)
-    private String apellido;
+    private String apellido;    
 
     @Column(nullable = false)
     private String ciudad;

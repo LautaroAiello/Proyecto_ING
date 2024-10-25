@@ -16,7 +16,7 @@ public class UsuarioService {
     public UsuarioModel registrarUsuario(UsuarioModel usuario){
 
         //Desarrollar logica para registrar usuario
-
+        System.out.println(usuario);
         return usuarioRepository.save(usuario);
     }
 
