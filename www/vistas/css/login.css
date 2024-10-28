@@ -40,6 +40,9 @@
 .button_crearCuenta p{
     margin: 10px
 }
+.button_crearCuenta a{
+    color: black;
+}
 
 .entrar_login{
     background-color: #4AA366;
